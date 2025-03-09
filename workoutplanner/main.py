@@ -1,13 +1,11 @@
+import uuid
 from fastapi import FastAPI
 
 app = FastAPI()
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+@app.get("/create")
+async def create():
+    request_id = str(uuid.uuid4())
+    return {"request_id": request_id}
 
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
