@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "workoutplanner"
 version = "0.1.0"
-description = ""
-authors = ["Vishal Joshi <vjoshi@ebi.ac.uk>"]
+description = "Workout APIs"
+authors = ["Vishal Joshi <joshivishal2010@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -13,6 +13,7 @@ uvicorn = "^0.34.0"
 
 [tool.poetry.group.dev.dependencies]
 setuptools = "^76.0.0"
+pytest = "^8.3.5"
 
 [build-system]
 requires = ["poetry-core"]
